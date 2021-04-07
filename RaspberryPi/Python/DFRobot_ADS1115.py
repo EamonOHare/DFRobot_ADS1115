@@ -3,6 +3,7 @@ import time
 
 # Get I2C bus
 bus = smbus.SMBus(1)
+time.sleep(1) #wait here to avoid 121 IO Error
 
 # I2C address of the device
 ADS1115_IIC_ADDRESS0				= 0x48
